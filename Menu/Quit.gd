@@ -1,5 +1,5 @@
-extends KinematicBody2D
-var health = 5
+extends Button
+
 
 # Declare member variables here. Examples:
 # var a = 2
@@ -14,3 +14,7 @@ func _ready():
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 #func _process(delta):
 #	pass
+
+
+func _on_Quit_pressed():
+	get_tree().quit()
